@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			
+			<meta charset="utf-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link href="css/bootstrap.css" rel="stylesheet"/>
+			<title>Animais Silvestres</title>
+		</head>
+		<style type="text/css">
+		body
+
+		{	
+			background-color: #0094ff;		}
+
+		.container
+		{
+			
+  			transform: translate(-50%, -50%);
+  			position: absolute;
+  			top: 50%;
+  			left: 50%
+
+		}
+
+		.hovereffect {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+  filter:  blur(3px);
+  -webkit-filter: blur(3px);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  border: 1px solid #c4fdff;
+  margin: 55px 55px 50px 70px;
+  background-color: transparent;
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #c4fdff;
+}
+
+.hovereffect a.info, .hovereffect h2 {
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  color:#c4fdff;
+  text-transform: uppercase;
+}
+
+.hovereffect:hover a.info, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.jumbotron {
+
+    background-image: url(https://i.imgur.com/51qHiWH.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+
+}
+
+.section
+
+{
+		border: 5px solid #c4fdff;
+		padding: 10px 0 30px 0;
+		margin-top: 200px;
+}
+
+.section1 {
+		border: 5px solid #c4fdff;
+		padding: 10px 10px 10px 10px;
+		margin-top: 20px;
+}
+
+
+p {
+		color: #c4fdff;
+		font-family: roboto;
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 17px;
+		letter-spacing: 4px;
+
+}
+
+p.text {
+	letter-spacing: 2px;
+	font-size: 12px;
+	text-transform: none;
+}
+
+img {
+
+	border: 5px solid #c4fdff;
+}
+
+		
+		</style>
+		<body>
+				<div class="jumbotron"></div>
+			<div class="container">
+
+					<div class="section">
+					<div class="row justify-content-center">
+
+						<div class="col-sm-3">
+							<p>Pavão</p>
+							<div class="hovereffect">
+							<img class="img-responsive" src="https://i.imgur.com/n3sDP63.png" width="250px" height="150px" alt="">
+						    <div class="overlay">
+                  			<a class="info" href="#">Saiba Mais</a>
+                		</div>
+                		</div>
+						</div>
+
+						<div class="col-sm-3 frame">
+							<p>Tartaruga Marinha</p>
+							<div class="hovereffect">
+							<img class="img-responsive" src="https://i.imgur.com/9Y6cMjc.png" width="250px" height="150px" alt="">
+						    <div class="overlay">
+                  			<a class="info" href="#">Saiba Mais</a>
+                		</div>
+                		</div>
+						</div>
+
+						<div class="col-sm-3">
+							<p>Água Viva</p>
+							<div class="hovereffect">
+							<img class="img-responsive" src="https://i.imgur.com/u5lwlfB.png" width="250px" height="150px" alt="">
+						    <div class="overlay">
+                  			<a class="info" href="#">Saiba Mais</a>
+                		</div>
+                		</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="section1">
+					<div class="row justify-content-center">
+
+						<div class="col-sm-12">
+							<p class="text">Animal silvestre não é o doméstico. O doméstico já está acostumado a viver perto das pessoas, como os gatos, cachorros, galinhas e porcos, entre outros. Já o animal silvestre foi tirado da natureza e reage à presença do ser humano. Por essa razão, tem dificuldades para crescer e se reproduzir em cativeiro. O papagaio, a arara, o mico e o jabuti, ao contrário do que muitos pensam, são animais silvestres.</p>
+						</div>
+					</div>
+				</div>		
+
+
+
+					
+          	</div>		
+		</body>
+	</html>
